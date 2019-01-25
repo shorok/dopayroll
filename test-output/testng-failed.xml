@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.AddEmpPageTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="ValidateEmployeeCreation" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- test.AddEmpPageTest -->
+      <class name="test.RunTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="LoginTest" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- test.RunTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
